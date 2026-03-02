@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo do Número Secreto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Bem vindo ao Jogo do Número Secreto!</h1>
+        <h2>Chute e veja sua sorte</h2>
+ 
+        <div class="resultado">
+            <input type="number" id="chute" placeholder="Chuta ai maluco!">
+            <p id="batata">O resultado é:</p>
+            <img id="cabra" src="https://img.itch.zone/aW1nLzM3NjAyNzcuZ2lm/original/H3p5js.gif" alt="">
+        </div>
+ 
+        <div class="botao">
+            <p>Escolha um número entre 1 e 10, Boa sorte!!</p>
+            <button onclick="start()">Start</button>
+            <button onclick="reset()">Reset</button>
+        </div>
+       
+        <audio id="acerto" src="som1.mp3"></audio>
+        <audio id="erro" src="som2.mp3"></audio>
+        <audio id="load" src="som4.mp3"></audio>
+        <audio id="gameover"src="som5.mp3"></audio>
+        <audio id="menos"src="som7.mp3"></audio>
+        <audio id="mais"src="som6.mp3"></audio>
+        <script src="script.js"></script>
+    </body>
+</html>

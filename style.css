@@ -1,0 +1,88 @@
+body{
+    background-image: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: cursive;
+    text-align: cursive;
+    padding: 20px;
+}
+
+img{
+   width: 100%;
+   max-width: 600px;
+   height: auto;
+   margin: 20px auto;
+}
+
+.resultado {
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px rgb(60, 27, 179);
+    border-radius: 80px;
+    box-shadow: 0 10px 16px rgb(255, 230, 0);
+    background-color: rgb(22, 201, 207);
+    padding: 20px; 
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+
+.botao{
+    display: flex; 
+    flex-direction: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 0 auto;
+    border: 3px solid rgb(18, 19, 17); 
+    border-radius: 90px;
+    box-shadow: 0 10px 16px rgb(245, 228, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 340px;
+    opacity: 4.7;
+}
+
+input{
+    border-radius: 80px;
+    border: 2px solid rgb(90, 29, 29);
+    box-shadow: 0 50px 50px rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+button{
+    background-color: rgb(255, 238, 0);
+    border: 2px dotted rgb(255, 255, 255);
+    border-radius: 60px;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transitor:background-color 0.3s ease
+}
+
+
+
+
+/* Responsividade para celualres */
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;  
+}
+    h2 {
+        font-size: 18px;
+}
+    .botao {
+        flex-direction: column;
+        gap: 10px;
+    } 
+    input {
+        font-size: 18px;
+    }
+     button {
+        width:100%
+     }
+
+}
